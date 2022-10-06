@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF"
+    tools:context="com.example.ahmad.myvoicerecorder.emailSettings">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_weight="1.0">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settings"
+                android:textColor="#616161"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_margin="2dp"
+                android:textSize="24sp" />
+            <ImageButton
+                android:id="@+id/btn_close"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="4dp"
+                android:onClick="goBack"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bgbutton"
+                android:src="@drawable/ic_close_black_24dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:background="#999"
+                />
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:text="@string/minimalistic"-->
+                <!--android:singleLine="true"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textStyle="bold"-->
+
+                <!--android:layout_gravity="center"-->
+                <!---->
+                <!---->
+                <!--android:textSize="16sp"-->
+                <!--android:padding="8dp"-->
+                <!--/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+
+
+
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:text="@string/mode"
+                    android:singleLine="true"
+                    android:layout_gravity="center"
+
+
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    />
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:id="@+id/cb_mode"
+                    android:text="@string/minimalistic"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:background="#999"
+                />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/mini_settngs"
+        android:visibility="gone"
+        android:padding="8dp"
+        android:layout_marginRight="8dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            
+            
+
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight=".8"
+                android:text="@string/subject"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                
+                
+                android:textSize="16sp"
+                android:padding="8dp"
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:id="@+id/et_mini_subject"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            
+            
+
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight=".8"
+                android:text="@string/content"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                
+                
+                android:textSize="16sp"
+                android:padding="8dp"
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:id="@+id/et_mini_content"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            
+            
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight=".8"
+                android:text="@string/audio_file_name"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                
+                
+                android:textSize="16sp"
+                android:padding="8dp"
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:id="@+id/et_mini_file_name"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            
+            
+
+            >
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/cb_show_content"
+                android:text="Show Page Content"
+                />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/cb_show_subject"
+                android:text="Show Page Subject"
+                />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/cb_send_via_mail"
+                android:text="Send Via Email Programm"
+                />
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+
+                android:background="#999"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:text="General"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textStyle="bold"
+
+                android:layout_gravity="center"
+                
+                
+                android:textSize="16sp"
+                android:padding="8dp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:background="#999"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                
+                android:orientation="vertical"
+                android:padding="8dp"
+                >
+        <TextView
+            android:id="@+id/txt_Recipients"
+            android:layout_height="40dp"
+            android:text="@string/recipients"
+            android:layout_width="match_parent"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            
+            
+            
+            />
+        <TextView
+            android:id="@+id/txt_subjects"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/subjects"
+            android:layout_marginTop="1dp"
+            android:layout_gravity="center"
+            
+            
+            android:textSize="16sp"
+            android:padding="8dp"
+            />
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/txt_faq"
+            android:layout_marginTop="1dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/faq"
+            
+            
+            android:textSize="16sp"
+            android:padding="8dp"
+            />
+        <TextView
+            android:id="@+id/txt_info"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/info"
+            android:onClick="startImprint"
+            android:layout_marginTop="1dp"
+            android:layout_gravity="center"
+            
+            
+            android:textSize="16sp"
+            android:padding="8dp"
+            
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            
+            
+            android:layout_marginTop="1dp"
+
+
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:text="@string/language"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                
+                
+                android:textSize="16sp"
+                android:padding="8dp"
+                />
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:id="@+id/sp_languages"
+                android:entries="@array/languages"
+
+                />
+        </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

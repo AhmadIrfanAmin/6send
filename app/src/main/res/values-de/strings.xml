@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">talk2memo</string>
+    <string name="email_address">E-Mail-Adresse</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="save">Speichern</string>
+    <string name="recipient_info">Empfänger-Info</string>
+    <string name="settings">Einstellungen</string>
+    <string name="subject">Betreff</string>
+    <string name="language">Sprache wählen</string>
+    <string name="info">Impressum</string>
+    <string name="subjects">Betreffzeilen konfiurieren</string>
+    <string name="recipients">Empfänger konfigurieren</string>
+    <string name="name">Name</string>
+    <string name="add">Add</string>
+    <string name="use_subject">Verwendeter Betreff</string>
+    <string name="faq">FAQ</string>
+    <string name="send_audio_file_to">Sprachdatei senden an</string>
+    <string name="content_of_email">Inhalt der E-Mail</string>
+    <string name="send_email">E-Mail versenden</string>
+    <string name="no_recording_found">keine Aufzeichnung vorhanden</string>
+    <string name="recording_deleted">Aufzeichnung gelöscht</string>
+    <string name="saving_file">Datei speichern</string>
+    <string name="delete_audio">Aufnahme löschen?</string>
+    <string name="are_you_sure_to_delete">Sind Sie sich wirklich sicher?</string>
+    <string name="record_first">Bitte zuerst Nachricht auszeichnen</string>
+    <string name="addrecipients_first">Kontakte hinzufügen bei den Einstellungen</string>
+    <string name="unknown_error">Etwas ging schief, versuche es später</string>
+    <string name="saved">Gerettet</string>
+    <string name="email_not_valid">E-mail ist ungültig</string>
+    <string name="email_already_exists">E-Mail existiert bereits</string>
+    <string name="audio_deleted">Aufzeichnung gelöscht</string>
+    <string name="empty_subject">Du musst einen Betreff auswählen</string>
+    <string name="subject_already">Du musst einen Empfänger auswählen</string>
+
+    <string-array name="languages">
+        <item>English</item>
+        <item>Deutsch</item>
+    </string-array>
+    <string name="mode">Modus</string>
+    <string name="minimalistic">minimalistisch</string>
+    <string name="email_body">Nachricht von talk2memo</string>
+    <string name="email_sent_successfully">Nachricht wurde versendet</string>
+</resources>
